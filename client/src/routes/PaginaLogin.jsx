@@ -3,12 +3,11 @@ import BotaoEntrar from '../BotaoEntrar.jsx'
 import api from '../services/api.jsx'
 
 // Imports do React:
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
 // Imports do MUI para os alertas:
 import Alert from "@mui/material/Alert"
-import AlertTitle from "@mui/material/AlertTitle"
 
 function PaginaLogin() {
     

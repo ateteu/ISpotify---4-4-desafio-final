@@ -3,14 +3,15 @@ import BotaoCadastro from '../BotaoCadastro.jsx'
 import api from '../services/api.jsx'
 
 // Imports do React:
-import React, { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import React, { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 // Imports do MUI para os alertas:
 import Alert from "@mui/material/Alert"
 
 function PaginaCadastro() {
 
+    const navigate = useNavigate();
     const [error, setError] = useState("");
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
@@ -25,8 +26,11 @@ function PaginaCadastro() {
                 role: "user",
             });
             console.log("Sucesso!");
+
+            // Navega para a página de login após o cadastro bem-sucedido:
+            navigate('/');
         } 
-        catch (error) {
+        catch(error) {
             console.log("Erro ao tentar fazer o cadastro do usuário!");
             console.log(error);
             setError(error.response.data);
