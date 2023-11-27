@@ -55,6 +55,8 @@ body {
 }
 #logout { cursor: pointer; }
 #logout:hover { color: #3FE168; }
+
+
 #body {
 	padding-top: 50px;
 }
@@ -70,8 +72,8 @@ body {
 	gap: 20px;
 }
 #linhasBody {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
 	gap: 40px;
 	padding-top: 40px;
 }
