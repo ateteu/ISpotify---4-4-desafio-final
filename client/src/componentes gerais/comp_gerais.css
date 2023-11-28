@@ -1,0 +1,34 @@
+.input {
+	background-color: #3C3C3C;
+	padding: 15px 50px 15px 15px;
+	outline: none;
+	border: none;
+	width: 700px;
+	height: 30px;
+
+	font-size: 25px;
+	font-weight: 300;
+	color: #868686;
+
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+}
+#inputEmail { background-image: url("./images/email.png"); }
+#inputSenha { background-image: url("./images/lock.png"); }
+
+
+#colunaLeft, #LCupper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+#colunaLeft {
+	height: 750px;
+	justify-content: space-between;
+}
+#LCitem1, #LCitem2, #LCitem3 {
+	display: inline-flex;
+	gap: 10px;
+}
+#logout { cursor: pointer; }
+#logout:hover { color: #3FE168; }

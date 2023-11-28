@@ -1,6 +1,9 @@
-import '../main.css'
-import BotaoEntrar from '../BotaoEntrar.jsx'
-import api from '../services/api.jsx'
+import '../../main.css'
+import './login.css'
+import '../../componentes gerais/comp_gerais.css'
+
+import BotaoEntrar from '../../componentes gerais/BotaoEntrar.jsx'
+import api from '../../services/api.jsx'
 
 // Imports do React:
 import React, { useState } from "react"

@@ -1,4 +1,6 @@
-import './main.css'
+import '../main.css'
+import '../routes/pg cadastro/cadastro.css'
+import './comp_gerais.css'
 
 function BotaoCadastro(props) {
     

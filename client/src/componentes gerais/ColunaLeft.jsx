@@ -1,5 +1,6 @@
-import './main.css'
-import api from './services/api.jsx'
+import '../main.css'
+import './comp_gerais.css'
+import api from '../services/api.jsx'
 
 // Imports do React:
 import React, { useState } from "react"

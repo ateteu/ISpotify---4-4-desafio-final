@@ -1,4 +1,5 @@
 import './main.css'
+import './comp_gerais.css'
 
 function CampoDeInput(props) {
     

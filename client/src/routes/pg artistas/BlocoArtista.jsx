@@ -1,4 +1,4 @@
-import './main.css'
+import './artistas.css'
 
 function BlocoArtista(props) {
     

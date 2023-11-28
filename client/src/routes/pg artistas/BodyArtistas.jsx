@@ -1,10 +1,11 @@
-import './main.css'
-import api from './services/api.jsx'
+import '../../main.css'
+import './artistas.css'
+import api from '../../services/api.jsx'
 
 // Imports do React:
 import React, { useState, useEffect } from "react"
 
-function Body() {
+function BodyArtistas() {
 
     const [error, setError] = useState("");
 
@@ -31,7 +32,7 @@ function Body() {
     }, []); // Array vazio [] indica que a função será executada apenas uma vez na montagem
     
     return (
-    <div id="body">
+    <div id="bodyArtistas">
 
         <div id="tituloBody"> Artistas </div>
         <div id="linhasBody">
@@ -58,4 +59,4 @@ function Body() {
     );
 }
 
-export default Body;
+export default BodyArtistas;

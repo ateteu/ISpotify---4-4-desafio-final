@@ -1,0 +1,35 @@
+#loginLine2 { padding-top: 20px; }
+#botaoEntrar {
+	background-color: white;
+	padding: 20px 120px;
+	border-radius: 50px;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	font-size: 20px;
+	font-weight: 800;
+	color: black;
+}
+#botaoEntrar:hover { background-color: #3FE168; }
+#loginBox {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+	margin-top: 10%;
+}
+#inputsLogin {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+#loginLastLine {
+	display: inline-flex;
+	gap: 10px;
+}
+#linkLogin {
+	cursor: pointer;
+	color: white;
+}
+#linkLogin:hover { color: #3FE168; }

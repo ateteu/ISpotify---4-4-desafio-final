@@ -1,0 +1,31 @@
+#bodyArtistas {
+	padding-top: 50px;
+}
+.blocoArtista {
+	background-color: rgb(28, 28, 28);
+	padding: 20px 20px 35px 20px;
+	border-radius: 5%;
+	max-width: 280px;
+	max-height: 220px;
+}
+#linhasBody {
+	display: grid;
+  	grid-template-columns: repeat(5, 1fr);
+	gap: 40px;
+	padding-top: 40px;
+}
+.fotoArtista {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%; /* Faz a foto ficar em formato circular */
+	cursor: pointer;
+}
+.nomeArtista {
+	font-size: 12.5px;
+	padding: 10px 0px 10px 0px;
+	word-wrap: break-word; /* Porque isso não tá funcionando? */
+}
+.legendaNomeArtista {
+	font-size: 12.5px;
+	color: #8C8C8C;
+}

@@ -1,4 +1,6 @@
-import './main.css'
+import '../main.css'
+import '../routes/pg login/login.css'
+import './comp_gerais.css'
 
 function BotaoEntrar(props) {
     

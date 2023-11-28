@@ -1,0 +1,38 @@
+#botaoCadastro {
+	background-color: #3FE168;
+	padding: 20px 120px;
+	border-radius: 50px;
+	align-items: center;
+	cursor: pointer;
+
+	font-size: 20px;
+	font-weight: 800;
+	color: white;
+}
+#tituloCadastro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#inputNome { background-image: url("./images/person.png"); }
+#cadastroBox {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+	margin-top: 10%;
+}
+#inputsCadastro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+#cadastroLastLine {
+	display: inline-flex;
+	gap: 10px;
+}
+#linkCadastro {
+	cursor: pointer;
+	color: white;
+}
+#linkCadastro:hover { color: #3FE168; }

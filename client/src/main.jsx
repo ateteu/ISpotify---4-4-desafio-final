@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './main.css'
 
 // Import dos componentes:
-import PaginaArtistas from './routes/PaginaArtistas.jsx'
-import PaginaLogin from './routes/PaginaLogin.jsx'
-import PaginaCadastro from './routes/PaginaCadastro.jsx'
+import PaginaArtistas from './routes/pg artistas/PaginaArtistas.jsx'
+import PaginaLogin from './routes/pg login/PaginaLogin.jsx'
+import PaginaCadastro from './routes/pg cadastro/PaginaCadastro.jsx'
 
 // Configuração do router:
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
