@@ -31,6 +31,8 @@ body {
 }
 .nomeArtista {
 	font-size: 12.5px;
+	padding: 10px 0px 10px 0px;
+	word-wrap: break-word; /* Porque isso não tá funcionando? */
 }
 .legendaNomeArtista {
 	font-size: 12.5px;
@@ -67,13 +69,9 @@ body {
 	max-width: 280px;
 	max-height: 220px;
 }
-#linha1Body, #linha2Body {
-	display: inline-flex;
-	gap: 20px;
-}
 #linhasBody {
 	display: grid;
-  	grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  	grid-template-columns: repeat(5, 1fr);
 	gap: 40px;
 	padding-top: 40px;
 }
@@ -81,10 +79,7 @@ body {
 	width: 160px;
 	height: 160px;
 	border-radius: 50%; /* Faz a foto ficar em formato circular */
-}
-.nomeArtista {
-	padding: 10px 0px 10px 0px;
-	word-wrap: break-word; /* Porque isso não tá funcionando? */
+	cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------*/

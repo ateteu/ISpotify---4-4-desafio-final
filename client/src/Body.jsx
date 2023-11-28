@@ -1,5 +1,5 @@
 import './main.css'
-import BlocoArtista from './BlocoArtista.jsx';
+import api from './services/api.jsx'
 
 // Imports do React:
 import React, { useState, useEffect } from "react"
@@ -11,37 +11,38 @@ function Body() {
     // Função para fazer pegar os dados dos artistas:
 
     const [artistas, setArtistas] = useState([]);
-    useEffect(() => {
-        async function getArtists() {
-            try {
-                const resposta = await api.get("/artists");
-                setArtistas(resposta.data);
-            
-                console.log("Sucesso! Dados dos artistas obtidos.");
-            }
-            catch(error) {
-                setError(error.resposta.data);
-                console.log("Houve um erro na requisição de dados dos artistas!");
-                console.log(error);
-            }
-        }
+    
+    async function getArtists() {
+        try {
+            const resposta = await api.get("/artists");
+            setArtistas(resposta.data);
         
-        getArtists();
+            console.log("Sucesso! Dados dos artistas obtidos.");
+        }
+        catch(error) {
+            setError(error.resposta.data);
+            console.log("Houve um erro na requisição de dados dos artistas!");
+            console.log(error);
+        }
+    }
 
-    }, []); // O array vazio [] garante a execução única do getArtists
+    useEffect(() => {
+        getArtists();
+    }, []); // Array vazio [] indica que a função será executada apenas uma vez na montagem
     
     return (
     <div id="body">
 
         <div id="tituloBody"> Artistas </div>
         <div id="linhasBody">
-            {artistas.map((item, i) => {return (
-                <div key={i}>
-                    <img
-                        src={ item.image }
-                        width={ 100 }
-                        style={{ borderRadius: "50%" }}
-                    />
+            {artistas.slice(0, 10).map((item, i) => {return (
+            
+                <div className="blocoArtista" key={i}>
+
+                    <img className="fotoArtista" src={ item.image } />
+                    <div className="nomeArtista"> { item.name } </div>
+                    <div className="legendaNomeArtista"> Artista </div>
+
                 </div>
                 ); })
             }
