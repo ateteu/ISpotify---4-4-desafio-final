@@ -8,7 +8,7 @@ import BodyArtistas from './BodyArtistas.jsx'
 
 function PaginaArtistas() {
     return (
-        <div id="page">
+        <div className="page">
             <ColunaLeft />
             <BodyArtistas />
         </div>

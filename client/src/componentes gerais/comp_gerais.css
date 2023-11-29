@@ -16,6 +16,8 @@
 #inputEmail { background-image: url("./images/email.png"); }
 #inputSenha { background-image: url("./images/lock.png"); }
 
+/*-----------------------------------------------------------------------------------*/
+/* Configurações da coluna esquerda que tem em algumas pages */
 
 #colunaLeft, #LCupper {
 	display: flex;
@@ -32,3 +34,14 @@
 }
 #logout { cursor: pointer; }
 #logout:hover { color: #3FE168; }
+
+/*-----------------------------------------------------------------------------------*/
+/* Configurações de botões: */
+
+#botaoLike, #botaoExcluir, #botaoMoreOptions, #botaoDownload, #botaoPlay {
+	cursor: pointer;
+}
+
+#botoesParaMusicas {
+	gap: 10px;
+}

@@ -5,7 +5,9 @@ body {
 	color: white;
 	margin: 0px; /* Remove uma margem padrão do corpo todo */
 }
-#page {
+
+/* Estilo para a page de artistas e a page das musicas de artistas */
+.page {
 	display: inline-flex;
 	margin: 60px 25px 25px 25px;
 	gap: 40px;

@@ -1,0 +1,28 @@
+#blocoMusicaPlaylist {
+    display: inline-flex;
+}
+#botoesHeader {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+#header_MusicasArtistas {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 60px 60px 60px;
+    gap: 40px;
+}
+#header_dadosArtista {
+    display: inline-flex;
+    gap: 40px;
+}
+#subHeader_MusicasArtistas {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+#musicasArtista {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 60px;
+}

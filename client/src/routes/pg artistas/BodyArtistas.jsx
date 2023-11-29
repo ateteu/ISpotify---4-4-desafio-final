@@ -1,6 +1,7 @@
 import '../../main.css'
 import './artistas.css'
 import api from '../../services/api.jsx'
+import Cookies from 'js-cookie'
 
 // Imports do React:
 import React, { useState, useEffect } from "react"
@@ -12,8 +13,7 @@ function BodyArtistas() {
     const [error, setError] = useState("");
     const [artistas, setArtistas] = useState([]);
 
-    // Função para fazer pegar os dados dos artistas:
-
+    // Função pra pegar os dados dos artistas:
     async function getArtists() {
         try {
             const resposta = await api.get("/artists");
@@ -32,7 +32,10 @@ function BodyArtistas() {
         getArtists();
     }, []); // Array vazio [] indica que a função será executada apenas uma vez na montagem
     
-    function pageRedirect() {
+    // Função que faz o redirect pra página do artista selecionado.
+    // Ela também guarda o id do artista clicado nos cookies, para acessá-lo na outra página
+    function pageRedirect(idArtista) {
+        Cookies.set('idArtistaSelecionado', idArtista);
         navigate('/musicas-artista');
     }
 
@@ -43,9 +46,9 @@ function BodyArtistas() {
         <div id="linhasBody">
             {artistas.slice(0, 10).map((item, i) => {return (
             
-                <div className="blocoArtista" key={i}>
+                <div className="blocoArtista" key={ i }>
 
-                    <img className="fotoArtista" src={ item.image } onClick={ pageRedirect } />
+                    <img className="fotoArtista" src={ item.image } onClick= { () => pageRedirect(item.id) } />
                     <div className="nomeArtista"> { item.name } </div>
                     <div className="legendaNomeArtista"> Artista </div>
 

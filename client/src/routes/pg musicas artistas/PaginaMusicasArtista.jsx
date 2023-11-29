@@ -8,7 +8,7 @@ import BodyMusicas from './BodyMusicas.jsx'
 
 function PaginaMusicasArtistas() {
     return (
-        <div id="pageMusicas">
+        <div className="page">
             <ColunaLeft />
             <BodyMusicas />
         </div>
