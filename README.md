@@ -1,5 +1,7 @@
 # ISpotify---4-4-desafio-final
 
+Equipe 3: Mateus Gontijo e Erik Avelino
+
 Não sei bem como fazer esse read-me, mas basicamente esse é o código do que conseguimos fazer até então do desafio 10 da trilha do front-end da ijunior.
 Utilizamos como base o código do desafio anterior, da semana 9, porém tivemos que arrumar primeiro a aquisição de dados da api, que não estava funcionando
 (o código que enviamos na semana passada estava com os artistas da página de artistas estático).
