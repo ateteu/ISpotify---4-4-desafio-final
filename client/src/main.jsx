@@ -6,6 +6,7 @@ import './main.css'
 import PaginaArtistas from './routes/pg artistas/PaginaArtistas.jsx'
 import PaginaLogin from './routes/pg login/PaginaLogin.jsx'
 import PaginaCadastro from './routes/pg cadastro/PaginaCadastro.jsx'
+import PaginaMusicasArtistas from './routes/pg musicas artistas/PaginaMusicasArtista.jsx'
 
 // Configuração do router:
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: "/artistas",
         element: <PaginaArtistas />
+    },
+    {
+        path: "/musicas-artista",
+        element: <PaginaMusicasArtistas />
     }
 ])
 

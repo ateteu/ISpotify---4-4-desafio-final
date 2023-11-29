@@ -4,15 +4,16 @@ import api from '../../services/api.jsx'
 
 // Imports do React:
 import React, { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 function BodyArtistas() {
 
+    const navigate = useNavigate();
     const [error, setError] = useState("");
+    const [artistas, setArtistas] = useState([]);
 
     // Função para fazer pegar os dados dos artistas:
 
-    const [artistas, setArtistas] = useState([]);
-    
     async function getArtists() {
         try {
             const resposta = await api.get("/artists");
@@ -31,6 +32,10 @@ function BodyArtistas() {
         getArtists();
     }, []); // Array vazio [] indica que a função será executada apenas uma vez na montagem
     
+    function pageRedirect() {
+        navigate('/musicas-artista');
+    }
+
     return (
     <div id="bodyArtistas">
 
@@ -40,7 +45,7 @@ function BodyArtistas() {
             
                 <div className="blocoArtista" key={i}>
 
-                    <img className="fotoArtista" src={ item.image } />
+                    <img className="fotoArtista" src={ item.image } onClick={ pageRedirect } />
                     <div className="nomeArtista"> { item.name } </div>
                     <div className="legendaNomeArtista"> Artista </div>
 
